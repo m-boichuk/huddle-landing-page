@@ -1,0 +1,246 @@
+/* Import */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap");
+/* CSS Reset*/
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:focus,
+:active {
+  outline: none;
+}
+a:focus,
+a:active {
+  outline: none;
+}
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+html,
+body {
+  font-size: 100%;
+  font-size: 14px;
+  line-height: 1;
+  width: 100%;
+  height: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+input::-ms-clear {
+  display: none;
+}
+button {
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+/* CSS Reset */
+:root {
+  --violet: hsl(257, 40%, 49%);
+  --soft-magenta: hsl(300, 69%, 71%);
+}
+/* 
+font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+ */
+body {
+  background-color: var(--violet);
+  background-image: url(images/bg-desktop.svg);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: contain;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  height: auto;
+}
+
+header {
+  margin: 40px 80px;
+}
+.main-container {
+  max-width: 1280px;
+  margin: 40px 80px;
+  display: flex;
+}
+.illustration {
+  width: 55%;
+}
+.screen {
+  width: 100%;
+  height: auto;
+}
+.right-container {
+  width: 45%;
+  margin-left: 60px;
+  color: white;
+}
+h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.subtitle1 {
+  margin: 50px 0 15px;
+}
+.subtitle2 {
+  margin: 15px 0 16px;
+}
+.text {
+  margin: 16px 0 30px;
+  font-size: 16px;
+  line-height: 2;
+}
+/* button */
+.btn {
+  -webkit-border-radius: 30;
+  -moz-border-radius: 30;
+  border-radius: 30px;
+  -webkit-box-shadow: 0px 5px 12px #a19ea1;
+  -moz-box-shadow: 0px 5px 12px #a19ea1;
+  box-shadow: 0px 5px 12px #a19ea1;
+  font-family: Arial;
+  color: var(--violet);
+  font-size: 16px;
+
+  padding: 20px 65px 20px 65px;
+  border: solid #1f628d 0px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  color: white;
+  background: var(--soft-magenta);
+  text-decoration: none;
+}
+
+/* Footer */
+ul {
+  position: relative;
+  display: flex;
+}
+
+ul li {
+  position: relative;
+  list-style: none;
+}
+ul li a {
+  font-size: 15px;
+
+  position: relative;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0 6px;
+  transition: 0.5s;
+  text-decoration: none;
+  color: white;
+  border-radius: 50%;
+
+  border: 3px solid white;
+}
+
+ul li a:hover {
+  border: 3px solid var(--soft-magenta);
+  color: var(--soft-magenta);
+}
+
+footer {
+  margin-bottom: 40px;
+  margin-right: 80px;
+  float: right;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 800px) {
+  body {
+    background-image: url(images/bg-mobile.svg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: contain;
+  }
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    margin: 40px 40px;
+  }
+  .illustration {
+    width: 100%;
+  }
+  .right-container {
+    width: 100%;
+    margin-left: 0;
+  }
+  .subtitle1,
+  .subtitle2,
+  .text {
+    text-align: center;
+  }
+  .button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  footer {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    margin: 30px auto 30px;
+  }
+  footer ul {
+    margin-bottom: 40px;
+  }
+}
